@@ -2,29 +2,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ByteNet</title>
-    <meta name="description" content="Download ByteNet.">
+    <meta name="description" content="Download ByteNet v5.6, the ultimate desktop player to stream movies and TV shows instantly with zero lag and high-definition quality.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&amp;family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- Radial Glowing Background FX -->
-    <div class="bg-glow"></div>
-    <div class="bg-glow-left"></div>
+    <!-- Radial Glowing Background & Grid Overlay -->
+    <div class="bg-glow bg-glow-1"></div>
+    <div class="bg-glow bg-glow-2"></div>
+    <div class="bg-grid-overlay"></div>
 
     <!-- Navigation Header -->
     <header>
         <div class="container nav-container">
             <a href="#" class="logo-wrapper">
                 <img src="assets/logo.png" class="logo-img" alt="ByteNet Logo">
-                <div class="logo-text">Byte<span>Net</span></div>
+                <div class="logo-text">Byte<span>Net</span> <span class="logo-badge">v5.6.0</span></div>
             </a>
             <nav class="nav-links">
-                <a href="#simulator">Showcase</a>
+                <a href="#hero">Overview</a>
+                <a href="#gallery">Interface</a>
                 <a href="#features">Features</a>
-                <a href="#download">Download</a>
+                <a href="#download" class="nav-download-link">Download</a>
                 <a href="#faq">FAQ</a>
                 <a href="https://github.com/bytenetteam/ByteNET" class="btn btn-secondary btn-sm" target="_blank">
-                    <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                    <svg width="15" height="15" fill="currentColor" viewBox="0 0 16 16">
                         <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path>
                     </svg>
                     GitHub
@@ -34,223 +39,272 @@
     </header>
 
     <!-- Hero Section -->
-    <main class="container">
+    <main class="container hero-container" id="hero">
         <section class="hero">
             <div class="hero-content">
-                <div class="badge">ByteNet 5.5
-    Released</div>
-                <h1 class="hero-title gold-gradient-text">Stream Torrents<br>Instantly.</h1>
-                <p class="hero-desc">ByteNet is a high-performance media client designed for power users. Packed with the premium MPV player core, it lets you stream video content directly from torrents without waiting for downloads.</p>
+                <div class="version-pill">
+                    <span class="pulse-dot"></span>
+                    <span class="pill-text">ByteNet v5.6.0 Released</span>
+                </div>
+                <h1 class="hero-title">Watch Movies &amp; TV Shows.<br><span class="gold-gradient-text">Zero Lag. Zero Waiting.</span></h1>
+                <p class="hero-desc">ByteNet is designed for effortless entertainment. Watch high-definition movies and TV show episodes instantly with ultra-smooth video playback and no loading delays.</p>
+
                 <div class="hero-buttons">
-                    <a href="#download" class="btn btn-primary">
-                        <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                    <a href="#download" class="btn btn-primary btn-glow">
+                        <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path>
                         </svg>
-                        Get ByteNet PC
+                        Download ByteNet PC
                     </a>
-                    <a href="#simulator" class="btn btn-secondary">View Showcase</a>
+                    <a href="#gallery" class="btn btn-secondary">
+                        <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path>
+                        </svg>
+                        View Screenshots
+                    </a>
                 </div>
+
                 <div class="hero-meta">
-                    <span>Platform: <strong>Windows 10 / 11 (x64)</strong></span>
-                    <span>License: <strong>Pro License</strong></span>
+                    <div class="meta-item">
+                        <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                        <span>Windows 10 / 11 (64-bit)</span>
+                    </div>
+                    <div class="meta-item">
+                        <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+                        <span>Subscription Required</span>
+                    </div>
+                    <div class="meta-item">
+                        <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                        <span>Instant Start</span>
+                    </div>
                 </div>
             </div>
+
+            <!-- Hero Window Graphics -->
             <div class="hero-graphic">
-                <div class="hero-slideshow">
-                    <img src="assets/screenshot_home.png" alt="ByteNet Dashboard" class="slideshow-img">
-                    <img src="assets/screenshot_movie.png" alt="ByteNet Movie Streaming" class="slideshow-img">
-                    <img src="assets/screenshot_search.png" alt="ByteNet Unified Search" class="slideshow-img">
-                    <img src="assets/screenshot_details.png" alt="ByteNet Episodes &amp; Seasons Tracker" class="slideshow-img active">
-                    <div class="slideshow-overlay"></div>
+                <div class="window-frame">
+                    <div class="window-header">
+                        <div class="window-dots">
+                            <span class="dot red"></span>
+                            <span class="dot yellow"></span>
+                            <span class="dot green"></span>
+                        </div>
+                        <div class="window-title">ByteNet Desktop v5.6.0</div>
+                        <div class="window-status"><span class="status-indicator"></span> Ready</div>
+                    </div>
+                    <div class="hero-slideshow">
+                        <img src="assets/screenshot_home.png" alt="ByteNet Home Interface" class="slideshow-img">
+                        <img src="assets/screenshot_movie.png" alt="ByteNet Streaming Player" class="slideshow-img">
+                        <img src="assets/screenshot_search.png" alt="ByteNet Smart Search" class="slideshow-img active">
+                        <img src="assets/screenshot_details.png" alt="ByteNet Season Directory" class="slideshow-img">
+                        <div class="slideshow-overlay"></div>
+                    </div>
                 </div>
             </div>
         </section>
     </main>
 
-    <!-- Screenshot Showcase Section -->
-    <section class="gallery-section" id="simulator">
+    <!-- Key Highlights Grid -->
+    <section class="highlights-section">
+        <div class="container">
+            <div class="highlights-grid">
+                <div class="highlight-box">
+                    <div class="highlight-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                    </div>
+                    <div>
+                        <h3>Lag-Free Streaming</h3>
+                        <p>Optimized playback technology starts videos immediately with no long buffering delays.</p>
+                    </div>
+                </div>
+
+                <div class="highlight-box">
+                    <div class="highlight-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+                    </div>
+                    <div>
+                        <h3>Smart Movie Search</h3>
+                        <p>Search any movie title or TV show episode instantly with smart auto-complete.</p>
+                    </div>
+                </div>
+
+                <div class="highlight-box">
+                    <div class="highlight-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+                    </div>
+                    <div>
+                        <h3>Safe &amp; Clean</h3>
+                        <p>100% self-contained application with automated checks for a smooth, reliable experience.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Screenshot Gallery Section -->
+    <section class="gallery-section" id="gallery">
         <div class="container">
             <div class="section-header">
-                <h2>Inside ByteNet</h2>
-                <p>Take a visual tour of ByteNet's premium features, search indexes, P2P streaming speeds, and episode trackers.</p>
+                <h2>Simple &amp; Beautiful Interface</h2>
+                <p>Designed for fast browsing and crystal-clear video quality.</p>
             </div>
 
             <div class="gallery-grid">
-                <!-- Card 1: Home & Discovery -->
                 <div class="gallery-card">
                     <div class="gallery-img-wrapper">
                         <img src="assets/screenshot_home.png" alt="ByteNet Home Dashboard">
                     </div>
                     <div class="gallery-info">
                         <h3 class="gallery-title">Home Dashboard</h3>
-                        <p class="gallery-desc">Discover trending movies and TV shows, manage your library, and start watching directly from a beautiful, Netflix-like interface.</p>
+                        <p class="gallery-desc">Discover trending movies and top TV series in a sleek dark theme.</p>
                     </div>
                 </div>
 
-                <!-- Card 2: Instant Streaming Detail -->
                 <div class="gallery-card">
                     <div class="gallery-img-wrapper">
-                        <img src="assets/screenshot_movie.png" alt="ByteNet Streaming Details">
+                        <img src="assets/screenshot_movie.png" alt="ByteNet Movie Details">
                     </div>
                     <div class="gallery-info">
-                        <h3 class="gallery-title">Instant Torrent Streaming</h3>
-                        <p class="gallery-desc">Browse available torrents (e.g. RuTracker, PirateBay) with file sizes and quality indicators. Play or download streams in 1080p and 4K instantly.</p>
+                        <h3 class="gallery-title">Instant Media Player</h3>
+                        <p class="gallery-desc">Click play and start watching in 1080p and 4K quality immediately.</p>
                     </div>
                 </div>
 
-                <!-- Card 3: Unified Search Results -->
                 <div class="gallery-card">
                     <div class="gallery-img-wrapper">
                         <img src="assets/screenshot_search.png" alt="ByteNet Search System">
                     </div>
                     <div class="gallery-info">
-                        <h3 class="gallery-title">Unified Web Search</h3>
-                        <p class="gallery-desc">Query multiple movie databases and torrent trackers simultaneously with results matching your typing in real time.</p>
+                        <h3 class="gallery-title">Unified Search</h3>
+                        <p class="gallery-desc">Find any title instantly as you type with detailed recommendations.</p>
                     </div>
                 </div>
 
-                <!-- Card 4: Episodes & Seasons Tracker -->
                 <div class="gallery-card">
                     <div class="gallery-img-wrapper">
-                        <img src="assets/screenshot_details.png" alt="ByteNet Season &amp; Episodes Detail">
+                        <img src="assets/screenshot_details.png" alt="ByteNet Season Directory">
                     </div>
                     <div class="gallery-info">
-                        <h3 class="gallery-title">Episodes &amp; Seasons Directory</h3>
-                        <p class="gallery-desc">Keep track of TV shows by seasons and check detailed descriptions. Check backend socket latency indicators at the bottom corner.</p>
+                        <h3 class="gallery-title">Series &amp; Episode Guide</h3>
+                        <p class="gallery-desc">Keep track of your favorite shows with automatic episode progress saving.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Detailed Features Grid with HTML5 Particle Network Canvas -->
+    <!-- Features Grid -->
     <section class="features-section" id="features">
-        <canvas class="peer-canvas-bg" id="peer-canvas" width="1467" height="687"></canvas>
+        <canvas class="peer-canvas-bg" id="peer-canvas" width="1559" height="575"></canvas>
         <div class="container">
             <div class="section-header">
-                <h2>Engine Architecture</h2>
-                <p>ByteNet couples lightweight interface designs with heavy-duty streaming libraries, delivering unmatched performance and convenience.</p>
+                <h2>Built for Speed &amp; Quality</h2>
+                <p>Everything you need for a smooth streaming experience on Windows.</p>
             </div>
 
             <div class="features-grid">
                 <div class="feature-card">
                     <div class="feature-icon-box">
-                        <svg viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path></svg>
                     </div>
-                    <h3 class="feature-title">Ultra-Fast Playback</h3>
-                    <p class="feature-desc">Integrated MPV player core renders videos instantly. No long waiting times or buffer queues. If the torrent has peers, ByteNet plays it immediately.</p>
+                    <h3 class="feature-title">Ultra HD Video Player</h3>
+                    <p class="feature-desc">Integrated high-performance video engine delivers crisp hardware decoding, smooth playback, and automatic subtitle sync.</p>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon-box">
-                        <svg viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
                     </div>
-                    <h3 class="feature-title">P2P Node Engine</h3>
-                    <p class="feature-desc">Powered by Node.js WebTorrent modules. Spawns localized background server daemons that balance peer streams dynamically to keep feeds stable.</p>
+                    <h3 class="feature-title">Instant Streaming</h3>
+                    <p class="feature-desc">Advanced streaming architecture optimizes data flow so your video starts playing right away without waiting.</p>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon-box">
-                        <svg viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
                     </div>
-                    <h3 class="feature-title">Security &amp; Containment</h3>
-                    <p class="feature-desc">Performs a 10-layer startup security sweep checking memory registers. Fully self-contained installer doesn't litter your registry with junk registry values.</p>
+                    <h3 class="feature-title">Simple One-Click Setup</h3>
+                    <p class="feature-desc">Self-contained installer installs ByteNet in seconds with all required components included out-of-the-box.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Download Section (The Download Hub) -->
+    <!-- Download Section -->
     <section class="download-section" id="download">
         <div class="container">
             <div class="section-header">
                 <h2>Download ByteNet PC</h2>
-                <p>Choose the packaging that fits your preference. Both packages are fully 64-bit and compile native dependencies internally.</p>
+                <p>Get the official 64-bit installer for Windows 10 and 11.</p>
             </div>
 
             <div class="download-grid">
-                <!-- Installer Card -->
-                <div class="download-card">
-                    <div class="download-icon">
-                        <svg viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
-                    </div>
-                    <div>
-                        <h3 class="download-name">Windows Installer</h3>
-                        <div class="download-details">
-                            <span>File: <strong>ByteNet_Setup.exe</strong></span>
-                            <span>Size: <strong>~260 MB</strong></span>
-                            <span>OS: <strong>Windows 10 / 11 (64-bit)</strong></span>
+                <div class="download-card main-download-card">
+                    <div class="download-header-row">
+                        <div class="download-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
+                        </div>
+                        <div>
+                            <h3 class="download-name">Windows Installer</h3>
+                            <span class="v-tag">v5.6.0 Desktop</span>
                         </div>
                     </div>
-                    <a href="https://github.com/bytenetteam/ByteNET/releases/download/ByteNet5.5/ByteNet_Setup.exe" class="btn btn-primary" id="btn-download-installer">
-                        Download Installer
+                    <div class="download-details">
+                        <div class="detail-row"><span>File:</span> <strong>ByteNet_Setup.exe</strong></div>
+                        <div class="detail-row"><span>Platform:</span> <strong>Windows 10 / 11 (64-bit)</strong></div>
+                        <div class="detail-row"><span>Setup:</span> <strong>All Components Included</strong></div>
+                    </div>
+                    <a href="https://github.com/bytenetteam/ByteNET/releases/download/ByteNET/ByteNet_Setup.exe" class="btn btn-primary btn-glow btn-lg" id="btn-download-installer">
+                        <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path>
+                        </svg>
+                        Download ByteNet_Setup.exe
                     </a>
-                    <p style="font-size:0.8rem; color:var(--text-muted); margin-top:16px; text-align:center;">Need a Pro subscription? Join our <a href="#" style="color:var(--accent); text-decoration:none; font-weight:600;">Discord Server</a> or <a href="#" style="color:var(--accent); text-decoration:none; font-weight:600;">WhatsApp Group</a> to subscribe!</p>
+                    <div class="pro-community-note">
+                        Need a subscription? Join our official 
+                        <a href="https://discord.gg" target="_blank" class="gold-link">Discord Community</a> or 
+                        <a href="https://whatsapp.com" target="_blank" class="gold-link">WhatsApp Support Group</a>.
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- FAQ accordion -->
+    <!-- FAQ Accordion Section -->
     <section class="faq-section" id="faq">
         <div class="container">
             <div class="section-header">
                 <h2>Frequently Asked Questions</h2>
-                <p>Have questions about setting up dependencies or requirements? Read our quick guide below.</p>
+                <p>Common questions about ByteNet setup and requirements.</p>
             </div>
 
             <div class="faq-list">
                 <div class="faq-item">
                     <div class="faq-question">
-                        Does ByteNet require external dependencies?
-                        <div class="faq-toggle-icon">
-                            <svg viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4"></path></svg>
-                        </div>
+                        Is ByteNet easy to set up?
+                        <div class="faq-toggle-icon"><svg viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4"></path></svg></div>
                     </div>
                     <div class="faq-answer">
-                        No! If you use the official <strong>Windows Installer</strong>, it contains an interactive dependency checker. If Microsoft Visual C++ 2015-2022 Redistributable (x64) is not found, you can choose to have it installed automatically in the background or follow a visual manual setup guide. MPV and Node.js are already pre-packaged in the application.
+                        Yes! The Windows Installer includes everything you need. Simply run `ByteNet_Setup.exe` and follow the instructions on screen.
                     </div>
                 </div>
+
                 <div class="faq-item">
                     <div class="faq-question">
-                        What are the minimum hardware requirements?
-                        <div class="faq-toggle-icon">
-                            <svg viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4"></path></svg>
-                        </div>
+                        What are the minimum system requirements?
+                        <div class="faq-toggle-icon"><svg viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4"></path></svg></div>
                     </div>
                     <div class="faq-answer">
-                        ByteNet requires a minimum screen resolution of <strong>1920x1080</strong> to display the UI properly, and a 64-bit version of Windows 10 or 11. Hardware acceleration decoding is supported and recommended for 4K streams.
+                        ByteNet requires a 64-bit version of Windows 10 or 11, and a screen resolution of at least 1920x1080 for optimal layout display.
                     </div>
                 </div>
+
                 <div class="faq-item">
                     <div class="faq-question">
-                        Why does ByteNet ask for Administrator privileges?
-                        <div class="faq-toggle-icon">
-                            <svg viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4"></path></svg>
-                        </div>
+                        How do I activate my subscription?
+                        <div class="faq-toggle-icon"><svg viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4"></path></svg></div>
                     </div>
                     <div class="faq-answer">
-                        ByteNet requires administrator permissions to configure local network streaming ports (such as port 45721 and 45722) and automatically set up Windows Firewall rule entries. This allows the backend Node.js WebTorrent modules to accept incoming connections from other torrent peers.
-                    </div>
-                </div>
-                <div class="faq-item">
-                    <div class="faq-question">
-                        How does licensing work for ByteNet?
-                        <div class="faq-toggle-icon">
-                            <svg viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4"></path></svg>
-                        </div>
-                    </div>
-                    <div class="faq-answer">
-                        ByteNet operates under a Pro License system. Upon installation, you can activate the client by logging in with your Google/Gmail account to unlock high-performance torrent streaming, custom shader controls, and advanced player features.
-                    </div>
-                </div>
-                <div class="faq-item">
-                    <div class="faq-question">
-                        How do I obtain a ByteNet Pro subscription?
-                        <div class="faq-toggle-icon">
-                            <svg viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4"></path></svg>
-                        </div>
-                    </div>
-                    <div class="faq-answer">
-                        To get a Pro subscription, simply join the official <a href="#" style="color:var(--accent); text-decoration:none; font-weight:600;">ByteNet Discord Server</a> or our <a href="#" style="color:var(--accent); text-decoration:none; font-weight:600;">WhatsApp Group</a>. Once joined, our support team will help configure your account subscription and associate it with your Google/Gmail ID.
+                        Simply sign in with your Google account inside ByteNet. Once linked via our Discord or WhatsApp support team, your subscription activates automatically.
                     </div>
                 </div>
             </div>
@@ -261,11 +315,11 @@
     <footer>
         <div class="container footer-content">
             <div class="footer-logo">
-                <img src="assets/logo.png" class="logo-img" style="height: 30px; width: 30px;" alt="ByteNet Logo">
-                <span>ByteNet</span>
+                <img src="assets/logo.png" class="logo-img" style="height: 32px; width: 32px;" alt="ByteNet Logo">
+                <span>ByteNet <strong>v5.6.0</strong></span>
             </div>
             <div class="footer-copy">
-                © 2026 ByteNet. All Rights Reserved.
+                © 2026 ByteNet Team. All Rights Reserved.
             </div>
         </div>
     </footer>
